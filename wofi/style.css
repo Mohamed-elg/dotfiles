@@ -1,0 +1,45 @@
+* {
+  font-size: 15px;
+}
+
+#window {
+  background-color: #22272e;
+  border: 2px solid;
+  border-radius: 0px;
+  opacity: 0.75;
+}
+
+#outer-box {
+  padding: 20px;
+}
+
+#input {
+  border: 0px solid;
+  padding: 8px 12px;
+}
+
+#scroll {
+  margin-top: 20px;
+}
+
+#img {
+  padding-right: 8px;
+  padding-left: 12px;
+}
+
+#text {
+  color: white;
+}
+
+#entry {
+  padding: 6px;
+}
+
+#entry:selected {
+  background-color: #373e47;
+}
+
+#input,
+#entry:selected {
+  border-radius: 4px;
+}
