@@ -74,19 +74,16 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{percent}% {icon}",
+    "format": "{icon}   {percent}%",
     "format-icons": ["", ""],
     "background": "00000000"
   },
   // Clock
-  //    "clockold": {
-  //        "format": "{:%H:%M %a}",
-  //        // "timezone": "America/New_York",
-  //        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-  //        // START CLOCK FORMAT
-  //        "format-alt": "{:%d %m %Y}"
-  //        // END CLOCK FORMAT
-  //    },
+      "clock": {
+	  "format": "{:L%H:%M    %a %d %B}",
+          //"timezone": "Europe/Paris",
+          "tooltip-format": "<big>{:L%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      },
   // System
   //    "custom/system": {
   //        "format": "",

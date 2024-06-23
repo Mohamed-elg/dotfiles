@@ -9,3 +9,12 @@
 - App launcher: Wofi
 - Notification system : Dunst
 - Terminal : Alacritty
+- Shell : Zsh
+
+### Nameing convention
+
+Stow uses thsi convention : `[name]/.config/[name]` if the package needs to be in .config/[name]
+
+### Usage 
+
+`stow [name]` with [name] being the package name.
