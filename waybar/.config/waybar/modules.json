@@ -79,11 +79,11 @@
     "background": "00000000"
   },
   // Clock
-      "clock": {
-	  "format": "{:L%H:%M    %a %d %B}",
-          //"timezone": "Europe/Paris",
-          "tooltip-format": "<big>{:L%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-      },
+  "clock": {
+    "format": "{:L%H:%M    %a %d %B}",
+    //"timezone": "Europe/Paris",
+    "tooltip-format": "<big>{:L%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
   // System
   //    "custom/system": {
   //        "format": "",
@@ -183,7 +183,7 @@
       "critical": 15
     },
     "format": "{icon}   {capacity}%",
-    "format-charging": "  {capacity}%",
+    "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon} {time}",
     // "format-good": "", // An empty format will hide the module
