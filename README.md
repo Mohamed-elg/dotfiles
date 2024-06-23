@@ -17,4 +17,4 @@ Stow uses thsi convention : `[name]/.config/[name]` if the package needs to be i
 
 ### Usage 
 
-`stow [name]` with [name] being the package name.
+`stow -t ~ [name]` with [name] being the package name.
