@@ -13,7 +13,7 @@
 
 ### Nameing convention
 
-Stow uses thsi convention : `[name]/.config/[name]` if the package needs to be in .config/[name]
+Stow uses this convention : `[name]/.config/[name]` if the package needs to be in .config/[name]
 
 ### Usage 
 
