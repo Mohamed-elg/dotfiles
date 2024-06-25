@@ -3,7 +3,7 @@
 }
 
 #window {
-  background-color: #22272e;
+  background-color: #272d38;
   border: 2px solid;
   border-radius: 0px;
   opacity: 0.85;
@@ -36,7 +36,7 @@
 }
 
 #entry:selected {
-  background-color: #373e47;
+  background-color: #3d4752;
 }
 
 #input,
