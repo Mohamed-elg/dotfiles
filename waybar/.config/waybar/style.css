@@ -93,7 +93,7 @@ window#waybar {
 
 #custom-appmenuicon {
   font-size: 20px;
-  color: @textcolor;
+  color: rgba(255, 204, 102, 0.733);
   margin: 0px 15px 0px 10px;
 }
 

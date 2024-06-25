@@ -6,7 +6,9 @@
   background-color: #22272e;
   border: 2px solid;
   border-radius: 0px;
-  opacity: 0.75;
+  opacity: 0.85;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
 }
 
 #outer-box {
