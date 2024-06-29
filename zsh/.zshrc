@@ -116,6 +116,7 @@ alias h="helm"
 alias tohypr="nvim ~/.config/hypr/hyprland.conf"
 alias p="pikaur"
 alias tocode="cd ~/Bureau/Code"
+alias n="nvim"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -124,6 +125,6 @@ ZSH_HIGHLIGHT_STYLES[builtin]=fg=#FFD700,bold
 ZSH_HIGHLIGHT_STYLES[function]=fg=#FFD700,bold
 ZSH_HIGHLIGHT_STYLES[command]=fg=#FFD700,bold
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=#daa520,bold
-
+echo -ne '\e]12;#DAA520\a'
 # Load Angular CLI autocompletion.
 #source <(ng completion script)
