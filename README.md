@@ -10,11 +10,12 @@
 - Notification system : Dunst
 - Terminal : Alacritty
 - Shell : Zsh
+- Clipboard: Clipman
 
 ### Nameing convention
 
 Stow uses this convention : `[name]/.config/[name]` if the package needs to be in .config/[name]
 
-### Usage 
+### Usage
 
 `stow -t ~ [name]` with [name] being the package name.
