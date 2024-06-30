@@ -11,6 +11,7 @@
 - Terminal : Alacritty
 - Shell : Zsh
 - Clipboard: Clipman
+- Screenqshot: hyprshot
 
 ### Nameing convention
 
