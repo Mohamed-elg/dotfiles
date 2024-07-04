@@ -190,7 +190,7 @@ window#waybar {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background-color: #eb4d4b;
+  /* background-color: #eb4d4b; */
 }
 
 /* -----------------------------------------------------
