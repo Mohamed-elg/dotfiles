@@ -152,6 +152,7 @@ window#waybar {
 #battery {
   font-size: 15px;
   color: @textcolor;
+  background-color: transparent;
   margin: 2.5px 15px 0px 0px;
 }
 
