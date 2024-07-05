@@ -118,6 +118,7 @@ alias tohypr="nvim ~/.config/hypr/hyprland.conf"
 alias p="pikaur"
 alias tocode="cd ~/Bureau/Code"
 alias n="nvim"
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
