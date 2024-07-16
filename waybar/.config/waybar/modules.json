@@ -39,9 +39,9 @@
   // Hyprland Window
   "hyprland/window": {
     "rewrite": {
-      "Sans titre – Chromium": "Chromium",
-      "Visual Studio Code": "Code",
-      "discordapp.com/app?_=1719429911860 – Discord": "Discord"
+      "(.*)Chromium": "Chromium",
+      "(.*)Code": "Code",
+      "(.*)Discord": "Discord"
     },
     "separate-outputs": true
   },

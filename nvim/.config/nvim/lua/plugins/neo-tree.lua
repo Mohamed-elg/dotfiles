@@ -26,7 +26,7 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", "<space>f", ":Neotree filesystem reveal left<CR>", {})
+		vim.keymap.set("n", "f", ":Neotree filesystem reveal left<CR>", {})
 		vim.keymap.set("n", "<space>b", ":Neotree buffers reveal left<CR>", {})
 		vim.keymap.set("n", "<space>g", ":Neotree git_status<CR>", {})
 	end,
