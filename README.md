@@ -8,7 +8,7 @@
 - Bar: Waybar
 - App launcher: Wofi
 - Notification system : Dunst
-- Terminal : Alacritty
+- Terminal : Alacritty & Tmux
 - Shell : Zsh
 - Clipboard: Clipman
 - Screenqshot: hyprshot
