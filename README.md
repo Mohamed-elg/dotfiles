@@ -11,7 +11,7 @@
 - Terminal : Alacritty & Tmux
 - Shell : Zsh
 - Clipboard: Clipman
-- Screenqshot: hyprshot
+- Screenqshot: Hyprshot
 
 ### Naming convention
 
