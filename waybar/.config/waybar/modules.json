@@ -166,7 +166,7 @@
     "format": "{ifname}",
     "format-wifi": "   {signalStrength}%",
     "format-ethernet": "  {ifname}",
-    "format-disconnected": "Disconnected",
+    "format-disconnected": "Déconnecté",
     "tooltip-format": " {ifname} via {gwaddri}",
     "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
     "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
@@ -180,7 +180,7 @@
     "states": {
       "good": 80,
       "warning": 20,
-      "critical": 15
+      "critical": 10
     },
     "format": "{icon}   {capacity}%",
     "format-charging": "  {capacity}%",
