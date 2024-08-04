@@ -23,12 +23,13 @@
     "modules-left": [
         "custom/appmenuicon",
         "hyprland/workspaces",
-        "hyprland/window"
+        "hyprland/window",
     ],
 
     // Modules Center
     "modules-center": [
-        "clock"
+        "clock",
+        "custom/playerctl"
     ],
 
     // Modules Right    

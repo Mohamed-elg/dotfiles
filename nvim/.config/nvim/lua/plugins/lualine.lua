@@ -4,7 +4,8 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				theme = "ayu_dark",
+				theme = "github_dark_dimmed",
+				blend = true,
 			},
 		})
 	end,

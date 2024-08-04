@@ -16,7 +16,8 @@ export EDITOR="nvim"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
+ZSH_TMUX_DEFAULT_SESSION_NAME='master'
+ZSH_TMUX_AUTOSTART='true'
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -77,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo pyenv colorize pip npm docker)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo pyenv colorize pip npm docker man)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,13 +88,6 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -118,7 +112,8 @@ alias tohypr="nvim ~/.config/hypr/hyprland.conf"
 alias p="pikaur"
 alias tocode="cd ~/Bureau/Code"
 alias n="nvim"
-alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
+alias f='nvim $(fzf -m --preview="bat --color=always {}")'
+alias d='cd $(fd --type directory | fzf)'
 alias ..="cd .."
 alias ...="cd ../.."
 alias dot="cd ~/Bureau/Code/dotfiles"
@@ -131,5 +126,6 @@ ZSH_HIGHLIGHT_STYLES[function]=fg=#FFD700,bold
 ZSH_HIGHLIGHT_STYLES[command]=fg=#FFD700,bold
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=#daa520,bold
 echo -ne '\e]12;#DAA520\a'
+
 # Load Angular CLI autocompletion.
 #source <(ng completion script)

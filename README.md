@@ -4,6 +4,7 @@
 
 - OS : Arch
 - WM : Hyprland
+- Login: Hyprlock
 - Wallpaper manager : Hyprpaper
 - Bar: Waybar
 - App launcher: Wofi
