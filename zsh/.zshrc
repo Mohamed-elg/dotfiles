@@ -16,8 +16,6 @@ export EDITOR="nvim"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-ZSH_TMUX_DEFAULT_SESSION_NAME='master'
-ZSH_TMUX_AUTOSTART='true'
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -112,11 +110,15 @@ alias tohypr="nvim ~/.config/hypr/hyprland.conf"
 alias p="pikaur"
 alias tocode="cd ~/Bureau/Code"
 alias n="nvim"
+alias vim="nvim"
+alias vi="nvim"
 alias f='nvim $(fzf -m --preview="bat --color=always {}")'
 alias d='cd $(fd --type directory | fzf)'
 alias ..="cd .."
 alias ...="cd ../.."
 alias dot="cd ~/Bureau/Code/dotfiles"
+alias ls="eza --icons=always"
+alias cat="bat"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

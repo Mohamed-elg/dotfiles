@@ -21,7 +21,7 @@
 
     // Modules Left
     "modules-left": [
-        "custom/appmenuicon",
+        // "custom/appmenuicon",
         "hyprland/workspaces",
         "hyprland/window",
     ],
@@ -37,8 +37,8 @@
         "pulseaudio",
         "battery",
         "backlight",
-	"network",
-	"tray"
+	"network"
+	// "tray"
 //	"custom/exit"
     ]
 }

@@ -6,7 +6,6 @@ prompt=Application
 normal_window=true
 layer=top
 
-
 ## Geometry
 width=600px
 height=400px

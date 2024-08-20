@@ -39,9 +39,16 @@
   // Hyprland Window
   "hyprland/window": {
     "rewrite": {
-      "(.*)Chromium": "Chromium",
-      "(.*)Code": "Code",
-      "(.*)Discord": "Discord"
+      "(.*)Chromium": "   Chromium",
+      "": "  ",
+      "(.*)Code": "   Code",
+      "(.*)Application": "Application",
+      "(.*)wezterm": "   Wezterm",
+      "(.*)Dossier personnel": "   Mohamed",
+      "(.*)Spotify": "  Spotify",
+      "(.*)Spotify Free": "  Spotify",
+      "(.*)Discord": "    Discord",
+      "(.*)Thunderbird(.*)": "   Thunderbird"
     },
     "separate-outputs": true
   },
@@ -82,7 +89,7 @@
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon}   {percent}%",
-    "format-icons": ["", ""],
+    "format-icons": ["", ""],
     "background": "00000000"
   },
   // Clock
