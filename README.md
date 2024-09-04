@@ -12,7 +12,7 @@
 - Terminal : Wezterm/Alacritty & Tmux
 - Shell : Zsh
 - Clipboard: Clipman
-- Screenqshot: Hyprshot
+- Screenshot: Hyprshot
 
 ### Naming convention
 

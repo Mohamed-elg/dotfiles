@@ -48,7 +48,8 @@
       "(.*)Spotify": "  Spotify",
       "(.*)Spotify Free": "  Spotify",
       "(.*)Discord": "    Discord",
-      "(.*)Thunderbird(.*)": "   Thunderbird"
+      "(.*)Thunderbird(.*)": "   Thunderbird",
+      "Notion": "   Notion"
     },
     "separate-outputs": true
   },
