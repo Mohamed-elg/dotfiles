@@ -56,7 +56,7 @@ return {
                 key_format = " [%s]",
                 action = ":enew",
             },
-            {
+            {{
                 icon = "  ",
                 icon_hl = "DashboardIcon",
                 desc = "Settings",
@@ -65,6 +65,16 @@ return {
                 key_hl = "DashboardKey",
                 key_format = " [%s]",
                 action = ":e $MYVIMRC",
+            },
+
+                icon = "󰁯  ",
+                icon_hl = "DashboardIcon",
+                desc = "Restore Session",
+                desc_hl = "DashboardDesc",
+                key = "s",
+                key_hl = "DashboardKey",
+                key_format = " [%s]",
+                action = ":SessionSearch",
             },
             {
                 icon = "  ",

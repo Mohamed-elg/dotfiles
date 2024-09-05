@@ -14,6 +14,6 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", "<space>n", vim.lsp.buf.format, {})
+		vim.keymap.set("n", "<space>ln", vim.lsp.buf.format, {desc = "Format document"})
 	end,
 }
