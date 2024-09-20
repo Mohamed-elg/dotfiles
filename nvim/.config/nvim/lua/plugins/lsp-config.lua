@@ -30,7 +30,7 @@ return {
 		lazy = false,
 		config = function()
 			local lspconfig = require("lspconfig")
-			lspconfig.tsserver.setup({})
+			lspconfig.ts_ls.setup({})
 			lspconfig.pyright.setup({})
 			lspconfig.html.setup({})
 			lspconfig.lua_ls.setup({})
