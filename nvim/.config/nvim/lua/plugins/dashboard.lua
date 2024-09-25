@@ -86,6 +86,36 @@ return {
                 key_format = " [%s]",
                 action = ":qa",
             },
+            {
+                icon = "  ",
+                icon_hl = "DashboardIcon",
+                desc = "Git",
+                desc_hl = "DashboardDesc",
+                key = "g",
+                key_hl = "DashboardKey",
+                key_format = " [%s]",
+                action = ":LazyGit",
+            },
+            {
+                icon = "  ",
+                icon_hl = "DashboardIcon",
+                desc = "Lazy",
+                desc_hl = "DashboardDesc",
+                key = "l",
+                key_hl = "DashboardKey",
+                key_format = " [%s]",
+                action = ":Lazy",
+            },
+            {
+                icon = "  ",
+                icon_hl = "DashboardIcon",
+                desc = "Mason",
+                desc_hl = "DashboardDesc",
+                key = "m",
+                key_hl = "DashboardKey",
+                key_format = " [%s]",
+                action = ":Mason",
+            },
         }
 
         dashboard.custom_footer = {
