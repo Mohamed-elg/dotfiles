@@ -27,7 +27,7 @@ return {
 
         dashboard.custom_center = {
             {
-                icon = "  ",
+                icon = " ",
                 icon_hl = "DashboardIcon",
                 desc = "Find File",
                 desc_hl = "DashboardDesc",
@@ -47,14 +47,14 @@ return {
                 action = "Telescope oldfiles",
             },
             {
-                icon = "  ",
+                icon = " ",
                 icon_hl = "DashboardIcon",
-                desc = "Settings",
+                desc = "Grep",
                 desc_hl = "DashboardDesc",
-                key = "s",
+                key = "e",
                 key_hl = "DashboardKey",
                 key_format = " [%s]",
-                action = ":e $MYVIMRC",
+                action = "Telescope live_grep",
             },
             {
                 icon = "󰁯  ",
