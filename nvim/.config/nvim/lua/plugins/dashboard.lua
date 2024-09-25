@@ -56,7 +56,7 @@ return {
                 key_format = " [%s]",
                 action = ":e $MYVIMRC",
             },
-
+            {
                 icon = "󰁯  ",
                 icon_hl = "DashboardIcon",
                 desc = "Restore Session",
