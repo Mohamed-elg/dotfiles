@@ -47,16 +47,6 @@ return {
                 action = "Telescope oldfiles",
             },
             {
-                icon = "  ",
-                icon_hl = "DashboardIcon",
-                desc = "New File",
-                desc_hl = "DashboardDesc",
-                key = "n",
-                key_hl = "DashboardKey",
-                key_format = " [%s]",
-                action = ":enew",
-            },
-            {{
                 icon = "  ",
                 icon_hl = "DashboardIcon",
                 desc = "Settings",
