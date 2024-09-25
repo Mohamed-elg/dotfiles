@@ -105,7 +105,7 @@ return {
                 key_hl = "DashboardKey",
                 key_format = " [%s]",
                 action = ":qa",
-            },
+            }
         }
 
         dashboard.custom_footer = {
