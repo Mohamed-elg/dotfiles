@@ -33,5 +33,7 @@ return {
 		vim.keymap.set("n", "<leader>ll", function()
 			lint.try_lint()
 		end, { desc = "Trigger linting for current file" })
+		require('lint').linters.flake8.cmd = "python"
+		require('lint').linters.flake8.args = { "-m", "flake8", "-f", ".flake8" }
 	end,
 }
