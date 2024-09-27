@@ -16,6 +16,7 @@ return {
 				"html",
 				"typescript",
 				"bash",
+				"go",
 				"dockerfile",
 				"gitignore",
 				"css",
