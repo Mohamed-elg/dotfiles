@@ -118,7 +118,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias dot="cd ~/Bureau/Code/dotfiles"
 alias ls="eza --icons=always"
-alias cat="bat"
+alias cat="bat --plain"
 alias venv="source .venv/bin/activate"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
