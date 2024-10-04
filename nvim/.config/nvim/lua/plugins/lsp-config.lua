@@ -30,6 +30,7 @@ return {
 		lazy = false,
 		config = function()
 			local lspconfig = require("lspconfig")
+			lspconfig.terraformls.setup({})
 			lspconfig.ts_ls.setup({})
 			lspconfig.pylsp.setup({})
 			lspconfig.html.setup({})
