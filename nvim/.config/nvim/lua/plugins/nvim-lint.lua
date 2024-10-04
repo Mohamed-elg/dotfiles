@@ -17,6 +17,7 @@ return {
 			ansible = { "ansible_lint" },
 			html = { "htmlhint" },
 			json = { "jsonlint" },
+			terraform = { "tflint" },
 			lua = { "luacheck" },
 			docker = { "hadolint" },
 			zsh = { "zsh" },
