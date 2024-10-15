@@ -4,7 +4,7 @@ default = true  # shader to use during times when there is no other shader sched
 
 [[shades]]
 name = "blue-light-filter"
-start_time = 20:20:00
+start_time = 19:30:00
 end_time = 06:00:00
 
 # [[shades]]
