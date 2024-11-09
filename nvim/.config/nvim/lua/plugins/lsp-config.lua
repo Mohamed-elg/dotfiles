@@ -8,11 +8,10 @@ return {
 	},
 	config = function()
 		local lspconfig = require("lspconfig")
-		local capabilities = vim.lsp.protocol.make_client_capabilities()
-		capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
+		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 		lspconfig.terraformls.setup({ capabilities = capabilities })
 		lspconfig.ts_ls.setup({ capabilities = capabilities })
-		lspconfig.pylsp.setup({ capabilities = capabilities, filetypes = { "python" } })
+		lspconfig.basedpyright.setup({ capabilities = capabilities, filetypes = { "python" } })
 		lspconfig.html.setup({ capabilities = capabilities })
 		lspconfig.yamlls.setup({ capabilities = capabilities })
 		lspconfig.lua_ls.setup({
@@ -28,7 +27,7 @@ return {
 				},
 			},
 		})
-		vim.keymap.set("n", "<C-space>", vim.lsp.buf.hover, {})
+		vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Details" })
 		vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Definition" })
 		vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "Reference" })
 		vim.keymap.set("n", "<leader>gt", "<cmd>Telescope lsp_references<CR>", { desc = "Telescope reference" })
