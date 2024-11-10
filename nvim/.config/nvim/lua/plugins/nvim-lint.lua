@@ -24,6 +24,7 @@ return {
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
+		vim.diagnostic.config({ virtual_text = false, underline = false })
 
 		vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
 			group = lint_augroup,

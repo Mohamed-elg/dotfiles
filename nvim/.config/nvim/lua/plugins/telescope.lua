@@ -12,12 +12,24 @@ return {
 
 		telescope.setup({
 			defaults = {
+				prompt = { "─", "│", " ", "│", "╭", "╮", "│", "│" },
+				results = { "─", "│", "─", "│", "├", "┤", "╯", "╰" },
+				preview = { "─", "│", "─", " ", "─", "╮", "╯", "─" },
+				sort_mru = true,
+				sorting_strategy = "descending",
+				selection_strategy = "reset",
+				multi_icon = "",
+				entry_prefix = "   ",
+				prompt_prefix = "   ",
+				selection_caret = " ",
+				hl_result_eol = true,
+				results_title = "",
 				path_display = { "smart" },
 				mappings = {
 					i = {
 						["<M-k>"] = actions.move_selection_previous, -- move to prev result
 						["<M-j>"] = actions.move_selection_next, -- move to next result
-						["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+						["<M-q>"] = actions.close,
 					},
 				},
 			},

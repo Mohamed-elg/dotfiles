@@ -1,6 +1,5 @@
 return {
 	"nvim-neo-tree/neo-tree.nvim",
-	branch = "v3.x",
 	requires = {
 		"nvim-lua/plenary.nvim",
 		"nvim-tree/nvim-web-devicons",
@@ -8,7 +7,6 @@ return {
 		-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		{
 			"s1n7ax/nvim-window-picker",
-			version = "2.*",
 			config = function()
 				require("window-picker").setup({
 					filter_rules = {
@@ -38,7 +36,8 @@ return {
 					end,
 				},
 			},
-			close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
+
+			close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
 			popup_border_style = "rounded",
 			enable_git_status = true,
 			enable_diagnostics = true,
@@ -66,8 +65,6 @@ return {
 					highlight = "NeoTreeIndentMarker",
 					-- expander config, needed for nesting files
 					with_expanders = nil, -- if nil and file nesting is enabled, will enable expanders
-					expander_collapsed = "",
-					expander_expanded = "",
 					expander_highlight = "NeoTreeExpander",
 				},
 				icon = {
@@ -102,16 +99,16 @@ return {
 				git_status = {
 					symbols = {
 						-- Change type
-						added = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
-						modified = "", -- or "", but this is redundant info if you use git_status_colors on the name
-						deleted = "✖", -- this can only be used in the git_status source
-						renamed = "󰁕", -- this can only be used in the git_status source
+						added = " ", -- or "✚", but this is redundant info if you use git_status_colors on the name
+						modified = "⚫", -- or "", but this is redundant info if you use git_status_colors on the name
+						deleted = "✖ ", -- this can only be used in the git_status source
+						renamed = "󰁕 ", -- this can only be used in the git_status source
 						-- Status type
-						untracked = "",
-						ignored = "",
-						unstaged = "󰄱",
-						staged = "",
-						conflict = "",
+						untracked = "󰄱  ",
+						ignored = " ",
+						unstaged = "󰄱  ",
+						staged = " ",
+						conflict = " ",
 					},
 				},
 				diagnostics = {
@@ -131,19 +128,19 @@ return {
 				-- If you don't want to use these columns, you can set `enabled = false` for each of them individually
 				file_size = {
 					enabled = true,
-					required_width = 64, -- min width of window required to show this column
+					required_width = 64,
 				},
 				type = {
 					enabled = true,
-					required_width = 122, -- min width of window required to show this column
+					required_width = 122,
 				},
 				last_modified = {
 					enabled = true,
-					required_width = 88, -- min width of window required to show this column
+					required_width = 88,
 				},
 				created = {
 					enabled = true,
-					required_width = 110, -- min width of window required to show this column
+					required_width = 110,
 				},
 				symlink_target = {
 					enabled = false,
@@ -154,8 +151,14 @@ return {
 			-- see `:h neo-tree-custom-commands-global`
 			commands = {},
 			window = {
-				position = "left",
-				width = 40,
+				position = "float",
+				popup = { -- settings that apply to float position only
+					size = {
+						-- height = "17",
+						width = "50",
+					},
+					position = "50%", -- 50% means center it
+				},
 				mapping_options = {
 					noremap = true,
 					nowait = true,
