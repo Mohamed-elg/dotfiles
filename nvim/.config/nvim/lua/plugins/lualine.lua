@@ -204,15 +204,14 @@ return {
 		local static = {}
 
 		local mode_text = {
-			n = "NORMAL",
-			i = "INSERT",
-			v = "VISUAL",
-			c = "COMMAND",
-			R = "REPLACE",
-			t = "TERMINAL",
+			n = " NORMAL",
+			i = " INSERT",
+			v = " VISUAL",
+			c = " COMMAND",
+			R = " REPLACE",
+			t = " TERMINAL",
 		}
 		local custom_icons = {
-			mode = "",
 			git_branch = "",
 			error = " ",
 			warn = " ",
@@ -247,14 +246,14 @@ return {
 		}
 
 		local mode_colors = {
-			n = palette.dragonRed,
+			n = palette.springBlue,
 			no = palette.dragonRed,
 			cv = palette.dragonRed,
 			ce = palette.dragonRed,
 			["!"] = palette.dragonRed,
 			t = palette.dragonRed,
 			i = palette.dragonGreen,
-			v = palette.dragonBlue,
+			v = palette.dragonViolet,
 			[""] = palette.dragonBlue,
 			V = palette.dragonBlue,
 			c = palette.dragonAqua,
@@ -335,7 +334,7 @@ return {
 				-- return custom_icons.mode
 			end,
 			color = function()
-				return { fg = mode_colors[vim.fn.mode()] }
+				return { bg = mode_colors[vim.fn.mode()], fg = "black" }
 			end,
 			padding = { right = 1 },
 		})
