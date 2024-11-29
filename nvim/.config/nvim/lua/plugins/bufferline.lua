@@ -18,8 +18,35 @@ return {
 				diagnostics = "nvim_lsp",
 				separator_style = { "", "" },
 				modified_icon = "●",
-				show_close_icon = false,
+				show_close_icon = true,
 				show_buffer_close_icons = true,
+			},
+			highlights = {
+				tab_selected = {
+					fg = "#ffffff",
+					italic = false,
+					bold = false,
+				},
+				warning_selected = {
+					fg = "#ffffff",
+					italic = false,
+					bold = false,
+				},
+				buffer_selected = {
+					fg = "#ffffff",
+					italic = false,
+					bold = false,
+				},
+				hint_selected = {
+					fg = "#ffffff",
+					italic = false,
+					bold = false,
+				},
+				hint_diagnostic_selected = {
+					fg = "#ffffff",
+					italic = false,
+					bold = false,
+				},
 			},
 		})
 	end,
