@@ -32,6 +32,11 @@ return {
 					italic = false,
 					bold = false,
 				},
+				error_selected = {
+					fg = "#ffffff",
+					italic = false,
+					bold = false,
+				},
 				buffer_selected = {
 					fg = "#ffffff",
 					italic = false,
@@ -42,7 +47,7 @@ return {
 					italic = false,
 					bold = false,
 				},
-				hint_diagnostic_selected = {
+				info_selected = {
 					fg = "#ffffff",
 					italic = false,
 					bold = false,

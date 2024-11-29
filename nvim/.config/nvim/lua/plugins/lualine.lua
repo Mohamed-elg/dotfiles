@@ -41,7 +41,7 @@ return {
 				lualine_c = { "" },
 				lualine_x = {
 					{ "filetype", icon_only = true, show_modified_status = false },
-					"filename",
+					{ "filename", color = { fg = "white" } },
 				},
 				lualine_y = { "" },
 				lualine_z = { "progress" },
