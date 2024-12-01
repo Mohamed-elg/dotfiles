@@ -1,16 +1,8 @@
 return {
-	"folke/tokyonight.nvim",
-	lazy = false,
-	priority = 1000,
+	"Mohamed-elg/mirage.nvim",
 	config = function()
-		require("tokyonight").setup({
-			transparent = false,
-			styles = {
-				comments = { italic = false },
-				keywords = { italic = false },
-			},
-		})
-		vim.cmd("colorscheme tokyonight-moon")
+		require("mirage").setup({})
+		vim.cmd("colorscheme mirage")
 	end,
 }
 -- return {
