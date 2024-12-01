@@ -12,12 +12,11 @@ return {
 					info = " ",
 					hint = " ",
 					added = " ",
-					modified = "󰝤 ",
+					modified = "~ ",
 					removed = " ",
 					lock = "",
 					-- modified = "●",
 				},
-				theme = "ayu_mirage",
 				use_mode_colors = true,
 				section_separators = { left = "", right = "" },
 				component_separators = { left = "|", right = "" },
@@ -37,13 +36,13 @@ return {
 			},
 			sections = {
 				lualine_a = { "mode" },
-				lualine_b = { { "diagnostics", always_visible = false }, "branch", "diff" },
+				lualine_b = { { "diagnostics", always_visible = false }, { "branch", icon = "" }, "diff" },
 				lualine_c = { "" },
 				lualine_x = {
-					{ "filetype", icon_only = true, show_modified_status = false },
-					{ "filename", color = { fg = "white" } },
+					{ "filetype", icon_only = true, show_modified_status = false, padding = { right = 0 } }, -- No space after the icon
+					{ "filename", symbols = { modified = "●" }, padding = { left = 0, right = 1 } }, -- No space before the filename
 				},
-				lualine_y = { "" },
+				lualine_y = {},
 				lualine_z = { "progress" },
 			},
 			inactive_sections = {
