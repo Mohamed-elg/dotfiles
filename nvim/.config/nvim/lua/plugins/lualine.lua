@@ -36,11 +36,21 @@ return {
 			},
 			sections = {
 				lualine_a = { "mode" },
-				lualine_b = { { "diagnostics", always_visible = false }, { "branch", icon = "" }, "diff" },
+				lualine_b = {
+					{ "diagnostics", always_visible = false, colored = false },
+					{ "branch", icon = "" },
+					{ "diff", colored = false },
+				},
 				lualine_c = { "" },
 				lualine_x = {
-					{ "filetype", icon_only = true, show_modified_status = false, padding = { right = 0 } }, -- No space after the icon
-					{ "filename", symbols = { modified = "●" }, padding = { left = 0, right = 1 } }, -- No space before the filename
+					{
+						"filetype",
+						icon_only = true,
+						show_modified_status = false,
+						padding = { right = 0 },
+						colored = false,
+					},
+					{ "filename", symbols = { modified = "●" }, padding = { left = 0, right = 1 } },
 				},
 				lualine_y = {},
 				lualine_z = { "progress" },
