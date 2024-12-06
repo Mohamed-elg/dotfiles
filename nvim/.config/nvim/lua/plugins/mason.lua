@@ -31,7 +31,7 @@ return {
 				"html",
 				"cssls",
 				"lua_ls",
-				"basedpyright",
+				"pyright",
 				"gopls",
 				"dockerls",
 				"bashls",
