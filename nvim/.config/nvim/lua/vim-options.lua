@@ -1,18 +1,19 @@
 -- Basics
 vim.g.mapleader = " "
 vim.opt.tabstop = 4
-vim.opt.nrformats = true
 vim.opt.shiftwidth = 4
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 vim.opt.smartindent = true
+vim.opt.smarttab = true
 vim.opt.autoindent = true
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.splitright = true
+vim.opt.splitbelow = true
 vim.opt.ignorecase = true
-vim.splitbelow = true
+vim.opt.breakindent = true
 
 -- Fonts & icons
 vim.opt.guifont = "MesloLGM Nerd Font:h12"
