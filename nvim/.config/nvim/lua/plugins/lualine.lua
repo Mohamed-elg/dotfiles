@@ -1,21 +1,23 @@
 return {
 	{
-		"letieu/harpoon-lualine",
-		dependencies = {
-			{
-				"ThePrimeagen/harpoon",
-				branch = "harpoon2",
-			},
+		"f-person/git-blame.nvim",
+		event = "VeryLazy",
+		opts = {
+			enabled = true,
+			message_template = "󰜘 <author>, <date>",
+			-- date_format = "%m-%d-%Y %H:%M:%S",
+			date_format = "%r",
+			virtual_text_column = 1, -- virtual text start column, check Start virtual text at column section for more options
 		},
 	},
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
-			local function get_harpoon_indicator(harpoon_entry)
-				return harpoon_entry.value
-			end
+			local git_blame = require("gitblame")
+			vim.g.gitblame_display_virtual_text = 0
 			require("lualine").setup({
+
 				options = {
 					icons_enabled = true,
 					symbols = {
@@ -32,7 +34,7 @@ return {
 					},
 					use_mode_colors = true,
 					section_separators = { left = "", right = "" },
-					component_separators = { left = "|", right = "" },
+					component_separators = { left = " ", right = "" },
 					disabled_filetypes = {
 						statusline = {},
 						winbar = {},
@@ -54,10 +56,9 @@ return {
 						{ "branch", icon = "" },
 						{ "diff", colored = false },
 					},
-					lualine_c = {},
+					lualine_c = { "%=", git_blame.get_current_blame_text },
 					lualine_x = {},
 					lualine_y = {
-						{ "harpoon2", padding = { right = 75 } },
 						{
 							"filetype",
 							icon_only = true,
