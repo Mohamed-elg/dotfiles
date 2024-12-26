@@ -48,6 +48,7 @@
       "(.*)Dossier personnel": "   Mohamed",
       "(.*)Spotify": "  Spotify",
       "(.*)Spotify Free": "  Spotify",
+      "(.*) - (.*)": "  Spotify",
       "(.*)Discord": "    Discord",
       "(.*)Thunderbird(.*)": "   Thunderbird",
       "Notion": "   Notion"

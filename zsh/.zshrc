@@ -128,7 +128,7 @@ ZSH_HIGHLIGHT_STYLES[builtin]=fg=#FFD700,bold
 ZSH_HIGHLIGHT_STYLES[function]=fg=#FFD700,bold
 ZSH_HIGHLIGHT_STYLES[command]=fg=#FFD700,bold
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=#daa520,bold
-echo -ne '\e]12;#DAA520\a'
+# echo -ne '\e]12;#DAA520\a'
 
 # Load Angular CLI autocompletion.
 #source <(ng completion script)
