@@ -40,7 +40,7 @@
   "hyprland/window": {
     "rewrite": {
       "(.*)Chromium": "   Chromium",
-      "": "  ",
+      "": "",
       "(.*)Code": "   Code",
       "(.*)Application": "Application",
       "(.*)wezterm": "   Terminal",

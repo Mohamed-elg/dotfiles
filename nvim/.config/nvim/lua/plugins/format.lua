@@ -19,7 +19,7 @@ return {
 				liquid = { "prettier" },
 				lua = { "stylua" },
 				python = { "black", "isort" },
-				go = { "gospel" },
+				go = { "goimports" },
 			},
 		})
 

@@ -14,6 +14,7 @@ return {
 		lspconfig.pyright.setup({ capabilities = capabilities, filetypes = { "python" } })
 		lspconfig.html.setup({ capabilities = capabilities })
 		lspconfig.yamlls.setup({ capabilities = capabilities })
+		lspconfig.gopls.setup({ capabilities = capabilities })
 		lspconfig.lua_ls.setup({
 			capabilities = capabilities,
 			settings = {

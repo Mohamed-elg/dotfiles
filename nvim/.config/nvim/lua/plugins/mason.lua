@@ -48,7 +48,7 @@ return {
 				"black",
 				"eslint_d",
 				"flake8",
-				"gospel",
+				"golangci-lint",
 				"yamllint",
 				"markdownlint",
 				"ansible-lint",
