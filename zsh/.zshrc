@@ -23,6 +23,8 @@ ZSH_HIGHLIGHT_STYLES[precommand]=fg=#daa520,bold
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+alias lsa="ls -a"
+alias ll="ls -la"
 alias gps="git push"
 alias gpl="git pull"
 alias gsw="git switch"
