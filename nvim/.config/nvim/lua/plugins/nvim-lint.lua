@@ -11,7 +11,7 @@ return {
 			javascript = { "eslint_d" },
 			typescript = { "eslint_d" },
 			python = { "flake8" },
-			go = { "gospel" },
+			go = { "golangcilint" },
 			yaml = { "yamllint" },
 			markdown = { "markdownlint" },
 			ansible = { "ansible_lint" },
