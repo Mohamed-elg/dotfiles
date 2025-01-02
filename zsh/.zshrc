@@ -1,12 +1,24 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export EDITOR="nvim"
-export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
-eval "$(starship init zsh)"
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="robbyrussell"
+
+export ZSH_CUSTOM="$HOME/.zsh"
+
+plugins=(git sudo docker zsh-autosuggestions zsh-syntax-highlighting pyenv colorize pip npm kubectl)
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 ZSH_HIGHLIGHT_STYLES[alias]=fg=#FFD700,bold
@@ -15,13 +27,11 @@ ZSH_HIGHLIGHT_STYLES[function]=fg=#FFD700,bold
 ZSH_HIGHLIGHT_STYLES[command]=fg=#FFD700,bold
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=#daa520,bold
 
-# export MANPATH="/usr/local/man:$MANPATH"
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 alias lsa="ls -a"
 alias ll="ls -la"
@@ -47,3 +57,6 @@ alias dot="cd ~/Bureau/Code/dotfiles"
 alias ls="eza --icons=always"
 alias cat="bat --plain"
 alias venv="source .venv/bin/activate"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
