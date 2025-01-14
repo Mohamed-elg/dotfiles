@@ -29,6 +29,7 @@ return {
 			ensure_installed = {
 				"ts_ls",
 				"vuels",
+				"angularls",
 				"html",
 				"cssls",
 				"lua_ls",
