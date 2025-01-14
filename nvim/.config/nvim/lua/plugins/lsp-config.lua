@@ -16,6 +16,7 @@ return {
 		lspconfig.yamlls.setup({ capabilities = capabilities })
 		lspconfig.gopls.setup({ capabilities = capabilities })
 		lspconfig.vuels.setup({ capabilities = capabilities })
+		lspconfig.dockerls.setup({ capabilities = capabilities })
 		lspconfig.lua_ls.setup({
 			capabilities = capabilities,
 			settings = {
