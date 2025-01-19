@@ -42,6 +42,7 @@
       "(.*)Chromium": "   Chromium",
       "": "",
       "(.*)Code": "   Code",
+      "(.*)LibreWolf": "LibreWolf",
       "(.*)Application": "Application",
       "(.*)wezterm": "   Terminal",
       "tmux": "   Terminal",

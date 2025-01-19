@@ -57,7 +57,7 @@ return {
 				action = "Telescope live_grep",
 			},
 			{
-				icon = " ",
+				icon = "  ",
 				icon_hl = "DashboardIcon",
 				desc = "Git",
 				desc_hl = "DashboardDesc",
