@@ -14,6 +14,7 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.ignorecase = true
 vim.opt.breakindent = true
+vim.opt.autoread = true
 
 -- Fonts & icons
 vim.opt.guifont = "MesloLGM Nerd Font:h12"
