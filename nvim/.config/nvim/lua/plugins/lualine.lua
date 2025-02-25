@@ -82,7 +82,7 @@ return {
 							"filetype",
 							icon_only = true,
 							show_modified_status = false,
-							padding = { right = 0 },
+							padding = { left = 1, right = 0 },
 							colored = false,
 						},
 						{ "filename", symbols = { modified = "●" }, padding = { left = 0, right = 1 } },
