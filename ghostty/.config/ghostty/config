@@ -3,4 +3,4 @@ font-family = Meslo LG Nerd Font
 background = #212733
 cursor-style = block
 cursor-color = #DAA520
-command = tmux new-session -A -s master
+command = tmux new-session -A -s Master

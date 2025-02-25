@@ -10,6 +10,7 @@ return {
 			virtual_text_column = 1, -- virtual text start column, check Start virtual text at column section for more options
 		},
 	},
+	{ "AndreM222/copilot-lualine" },
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -59,6 +60,24 @@ return {
 					lualine_c = { "%=", git_blame.get_current_blame_text },
 					lualine_x = {},
 					lualine_y = {
+						{
+							"copilot",
+							symbols = {
+								status = {
+									icons = {
+										enabled = " ",
+										sleep = " ", -- auto-trigger disabled
+										disabled = " ",
+										warning = " ",
+										unknown = " ",
+									},
+								},
+								spinners = "dots", -- has some premade spinners
+								spinner_color = "#6272A4",
+							},
+							show_colors = false,
+							show_loading = true,
+						},
 						{
 							"filetype",
 							icon_only = true,
