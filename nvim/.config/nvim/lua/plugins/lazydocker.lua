@@ -10,6 +10,6 @@ return {
 		"n",
 		"<leader>ld",
 		"<cmd>LazyDocker<CR>",
-		{ desc = "Toggle LazyDocker", noremap = true, silent = true }
+		{ desc = "Docker", noremap = true, silent = true }
 	),
 }
