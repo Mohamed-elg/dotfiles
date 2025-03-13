@@ -11,8 +11,7 @@ fi
 export EDITOR="nvim"
 
 export ZSH="$HOME/.oh-my-zsh"
-
-ZSH_THEME="robbyrussell"
+export PATH="$HOME/go/bin:$PATH"
 
 export ZSH_CUSTOM="$HOME/.zsh"
 

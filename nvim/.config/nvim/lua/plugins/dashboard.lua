@@ -77,7 +77,7 @@ return {
 				action = ":SessionSearch",
 			},
 			{
-				icon = "  ",
+				icon = "󰏗  ",
 				icon_hl = "DashboardIcon",
 				desc = "Lazy",
 				desc_hl = "DashboardDesc",
@@ -87,7 +87,7 @@ return {
 				action = ":Lazy",
 			},
 			{
-				icon = "  ",
+				icon = "  ",
 				icon_hl = "DashboardIcon",
 				desc = "Mason",
 				desc_hl = "DashboardDesc",

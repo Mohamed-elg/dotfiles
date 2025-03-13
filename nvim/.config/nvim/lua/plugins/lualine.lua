@@ -28,7 +28,7 @@ return {
 						info = " ",
 						hint = " ",
 						added = " ",
-						modified = "~ ",
+						modified = " ",
 						removed = " ",
 						lock = "",
 						-- modified = "●",
@@ -51,13 +51,34 @@ return {
 					},
 				},
 				sections = {
-					lualine_a = { "mode" },
+					lualine_a = {
+						{
+							"mode",
+							fmt = function(str)
+								if str == "NORMAL" then
+									return " NORMAL"
+								elseif str == "VISUAL" then
+									return " VISUAL"
+								elseif str == "INSERT" then
+									return "󰉷 INSERT"
+								else
+									return str
+								end
+							end,
+						},
+					},
 					lualine_b = {
 						{ "diagnostics", always_visible = false, colored = false },
 						{ "branch", icon = "" },
 						{ "diff", colored = false },
 					},
-					lualine_c = { "%=", git_blame.get_current_blame_text },
+					lualine_c = {
+						"%=",
+						{
+							git_blame.get_current_blame_text,
+							cond = git_blame.is_blame_text_available,
+						},
+					},
 					lualine_x = {},
 					lualine_y = {
 						{
