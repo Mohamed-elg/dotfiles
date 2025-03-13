@@ -28,7 +28,7 @@ return {
 						info = " ",
 						hint = " ",
 						added = " ",
-						modified = " ",
+						modified = " ",
 						removed = " ",
 						lock = "",
 						-- modified = "●",

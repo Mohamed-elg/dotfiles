@@ -15,7 +15,6 @@ vim.opt.splitbelow = true
 vim.opt.ignorecase = true
 vim.opt.breakindent = true
 vim.opt.autoread = true
-vim.cmd("set autoread")
 
 -- Fonts & icons
 vim.opt.guifont = "MesloLGM Nerd Font:h12"
