@@ -40,9 +40,9 @@
   "hyprland/window": {
     "rewrite": {
       "(.*)Chromium": "   Chromium",
-      "": "",
+      "": "",
       "(.*)Code": "   Code",
-      "(.*)LibreWolf": "LibreWolf",
+      "(.*)LibreWolf": "󰈹  LibreWolf",
       "(.*)Application": "Application",
       "(.*)wezterm": "   Terminal",
       "tmux": "   Terminal",
@@ -92,7 +92,7 @@
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon}   {percent}%",
-    "format-icons": ["", ""],
+    "format-icons": ["󰃜", "󰃛", "󰃚", "󰃞", "󰃝", "󰃟", "󰃠"],
     "background": "00000000"
   },
   // Clock
