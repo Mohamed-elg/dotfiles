@@ -13,7 +13,21 @@ return {
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 		lspconfig.terraformls.setup({ capabilities = capabilities })
 		lspconfig.ts_ls.setup({ capabilities = capabilities })
-		lspconfig.pyright.setup({ capabilities = capabilities, filetypes = { "python" } })
+		lspconfig.pyright.setup({
+			capabilities = capabilities,
+			filetypes = { "python" },
+			settings = {
+				python = {
+					analysis = {
+						typeCheckingMode = "strict",
+						diagnosticSeverityOverrides = {
+							reportAttributeAccessIssue = "none",
+							reportUnknownMemberType = "none",
+						},
+					},
+				},
+			},
+		})
 		lspconfig.html.setup({ capabilities = capabilities })
 		lspconfig.yamlls.setup({ capabilities = capabilities })
 		lspconfig.gopls.setup({ capabilities = capabilities })

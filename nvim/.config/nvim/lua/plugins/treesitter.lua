@@ -25,6 +25,8 @@ return {
 				"markdown_inline",
 				"vue",
 				"json",
+				"terraform",
+				"hcl",
 			},
 			auto_install = true,
 			incremental_selection = {
@@ -37,6 +39,7 @@ return {
 				},
 			},
 			sync_install = false,
+			additional_vim_regex_highlighting = false,
 			highlight = { enable = true },
 			indent = { enable = true },
 			autotag = {
