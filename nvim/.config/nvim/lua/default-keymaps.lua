@@ -1,10 +1,8 @@
 -- Default keymaps
 vim.api.nvim_set_keymap("i", "<M-leader>", "<ESC>", { noremap = true, desc = "Normal mode" })
--- vim.api.nvim_set_keymap("n", "<leader>q", ":q<CR>", { noremap = true, desc = "Quit" })
-vim.api.nvim_set_keymap("n", "q", ":q<CR>", { noremap = false, desc = "Quit" })
-vim.api.nvim_set_keymap("n", "<leader>Q", ":qa<CR>", { noremap = true, desc = "Quit all" })
--- vim.api.nvim_set_keymap("n", "<leader>w", ":w<CR>", { noremap = false, desc = "Write" })
+vim.api.nvim_set_keymap("n", "<leader>q", "q", { noremap = true, desc = "Macro" })
 vim.api.nvim_set_keymap("n", "m", ":w<CR>", { noremap = true, desc = "Write" })
+vim.api.nvim_set_keymap("n", "q", ":q<CR>", { noremap = true, desc = "Quit" })
 vim.api.nvim_set_keymap("n", "<leader>wq", ":wq<CR>", { noremap = true, desc = "Write and quit" })
 vim.api.nvim_set_keymap("n", "<leader>wqa", ":wqa<CR>", { noremap = true, desc = "Write and quit" })
 vim.api.nvim_set_keymap("n", "<leader>+", "<C-a>", { desc = "Num +" })

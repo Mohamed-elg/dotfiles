@@ -24,4 +24,4 @@ vim.fn.sign_define("DiagnosticSignInfo", { text = " ", texthl = "DiagnosticSi
 vim.fn.sign_define("DiagnosticSignHint", { text = "󰌵", texthl = "DiagnosticSignHint" })
 
 -- Miscellaneous
-vim.g.python3_host_prog = ".venv/bin/python"
+-- vim.g.python3_host_prog = ".venv/bin/python"
