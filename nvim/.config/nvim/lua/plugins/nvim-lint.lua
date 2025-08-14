@@ -15,7 +15,7 @@ return {
 			yaml = { "yamllint" },
 			markdown = { "markdownlint" },
 			ansible = { "ansible_lint" },
-			html = { "htmlhint" },
+			-- html = { "htmlhint" },
 			json = { "jsonlint" },
 			terraform = { "tflint" },
 			lua = { "luacheck" },
