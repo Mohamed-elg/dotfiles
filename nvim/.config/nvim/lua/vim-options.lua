@@ -1,4 +1,3 @@
--- Basics
 vim.g.mapleader = " "
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -16,13 +15,21 @@ vim.opt.splitbelow = true
 vim.opt.ignorecase = true
 vim.opt.breakindent = true
 vim.opt.autoread = true
+vim.opt.winborder = "rounded"
 
--- Fonts & icons
-vim.opt.guifont = "MesloLGM Nerd Font:h12"
-vim.fn.sign_define("DiagnosticSignError", { text = " ", texthl = "DiagnosticSignError" })
-vim.fn.sign_define("DiagnosticSignWarn", { text = " ", texthl = "DiagnosticSignWarn" })
-vim.fn.sign_define("DiagnosticSignInfo", { text = " ", texthl = "DiagnosticSignInfo" })
-vim.fn.sign_define("DiagnosticSignHint", { text = "󰌵", texthl = "DiagnosticSignHint" })
-
--- Miscellaneous
--- vim.g.python3_host_prog = ".venv/bin/python"
+vim.diagnostic.config({
+	signs = {
+		text = {
+			[vim.diagnostic.severity.ERROR] = " ",
+			[vim.diagnostic.severity.WARN] = " ",
+			[vim.diagnostic.severity.INFO] = " ",
+			[vim.diagnostic.severity.HINT] = "󰌵",
+		},
+		linehl = {
+			-- [vim.diagnostic.severity.ERROR] = "ErrorMsg",
+		},
+		numhl = {
+			-- [vim.diagnostic.severity.WARN] = "WarningMsg",
+		},
+	},
+})
