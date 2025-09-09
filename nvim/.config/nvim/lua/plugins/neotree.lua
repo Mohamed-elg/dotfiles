@@ -8,7 +8,15 @@ return {
 	},
 	lazy = false, -- neo-tree will lazily load itself
 	config = function()
-		require("neo-tree").setup({
+	require("neo-tree").setup({
+			event_handlers = {
+				{
+					event = "neo_tree_buffer_enter",
+					handler = function(arg)
+						vim.opt.relativenumber = true
+					end,
+				},
+			},
 			window = {
 				position = "float",
 				popup = {
