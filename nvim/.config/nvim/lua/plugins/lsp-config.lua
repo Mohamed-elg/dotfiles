@@ -8,10 +8,10 @@ return {
 		vim.lsp.enable("html")
 		vim.lsp.enable("yamlls")
 		vim.lsp.enable("gopls")
+		vim.lsp.config("vuels", {})
 		vim.lsp.enable("vuels")
 		vim.lsp.enable("angularls")
 		vim.lsp.enable("dockerls")
-		vim.lsp.enable("lua_ls")
 		vim.lsp.config("lua_ls", {
 			settings = {
 				Lua = {
@@ -21,6 +21,7 @@ return {
 				},
 			},
 		})
+		vim.lsp.enable("lua_ls")
 		vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Details" })
 		vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Definition" })
 		vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "Reference" })
