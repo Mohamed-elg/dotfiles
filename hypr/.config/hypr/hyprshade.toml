@@ -4,8 +4,8 @@ default = true  # shader to use during times when there is no other shader sched
 
 [[shades]]
 name = "blue-light-filter"
-start_time = 19:30:00
-end_time = 06:00:00
+start_time = 17:30:00
+end_time = 08:30:00
 
 # [[shades]]
 # name = "invert-colors"
