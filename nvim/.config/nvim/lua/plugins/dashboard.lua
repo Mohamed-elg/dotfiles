@@ -74,7 +74,7 @@ return {
 				key = "s",
 				key_hl = "DashboardKey",
 				key_format = " [%s]",
-				action = ":SessionSearch",
+				action = ":AutoSession search",
 			},
 			{
 				icon = "󰏗  ",
