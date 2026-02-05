@@ -12,6 +12,22 @@ return {
 		vim.lsp.enable("vuels")
 		vim.lsp.enable("angularls")
 		vim.lsp.enable("dockerls")
+		vim.lsp.config("pyright", {
+			settings = {
+				python = {
+					analysis = {
+						typeCheckingMode = "basic",
+						exclude = {
+							"**/.venv",
+							"**/venv",
+							"**/build",
+							"**/dist",
+							"**/__pycache__",
+						},
+					},
+				},
+			},
+		})
 		vim.lsp.config("lua_ls", {
 			settings = {
 				Lua = {

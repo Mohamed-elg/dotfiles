@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.have_nerd_font = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.number = true
@@ -10,9 +11,12 @@ vim.opt.smartindent = true
 vim.opt.smarttab = true
 vim.opt.autoindent = true
 vim.opt.clipboard:append("unnamedplus")
+
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+
 vim.opt.ignorecase = true
+vim.opt.smartcase = true
 vim.opt.breakindent = true
 vim.opt.autoread = true
 vim.opt.winborder = "rounded"
