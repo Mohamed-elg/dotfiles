@@ -42,7 +42,6 @@ return {
 		vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Definition" })
 		vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "Reference" })
 		vim.keymap.set("n", "<leader>gt", "<cmd>Telescope lsp_references<CR>", { desc = "Telescope reference" })
-		-- vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
 		vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, { desc = "Rename a variable" })
 	end,
 }
