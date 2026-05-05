@@ -1,13 +1,14 @@
 return {
-	"WhoIsSethDaniel/mason-tool-installer.nvim",
+	"mason-org/mason.nvim",
+	lazy = false,
 	dependencies = {
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		"mason-org/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
 	},
 	config = function()
-		local mason_lspconfig = require("mason-lspconfig")
-		local mason_tool_installer = require("mason-tool-installer")
-
-		mason_lspconfig.setup({
+		require("mason").setup()
+		require("mason-lspconfig").setup({
 			ensure_installed = {
 				"ts_ls",
 				"vuels",
@@ -15,7 +16,7 @@ return {
 				"html",
 				"cssls",
 				"lua_ls",
-				"pyright",
+				"ty",
 				"gopls",
 				"dockerls",
 				"bashls",
@@ -25,7 +26,7 @@ return {
 			},
 		})
 
-		mason_tool_installer.setup({
+		require("mason-tool-installer").setup({
 			ensure_installed = {
 				"prettier",
 				"stylua",
