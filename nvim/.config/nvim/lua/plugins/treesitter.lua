@@ -24,7 +24,7 @@ return {
 		}
 		require("arborist").setup({
 			ensure_installed = ensure_installed,
-			update_cadence = "weekly"
+			update_cadence = "weekly",
 		})
 	end,
 }
