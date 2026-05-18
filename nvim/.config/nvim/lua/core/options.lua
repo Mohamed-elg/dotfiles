@@ -1,5 +1,6 @@
 vim.g.have_nerd_font = true
 vim.opt.tabstop = 4
+vim.opt.swapfile = false
 vim.opt.shiftwidth = 4
 vim.opt.number = true
 vim.opt.relativenumber = true
