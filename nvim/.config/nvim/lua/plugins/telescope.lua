@@ -4,18 +4,16 @@ return {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons",
-		"andrew-george/telescope-themes",
+		"nvim-telescope/telescope-ui-select.nvim",
 	},
 	config = function()
 		local telescope = require("telescope")
 		local actions = require("telescope.actions")
 
-		telescope.load_extension("fzf")
-
 		telescope.setup({
 			defaults = {
 				preview = {
-					treesitter = true
+					treesitter = true,
 				},
 				path_display = { "smart" },
 				mappings = {
@@ -26,6 +24,9 @@ return {
 				},
 			},
 		})
+
+		telescope.load_extension("fzf")
+		telescope.load_extension("ui-select")
 
 		vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
 		vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
