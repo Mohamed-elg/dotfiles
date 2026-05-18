@@ -43,7 +43,6 @@ return {
 				"htmlhint",
 				"jsonlint",
 				"tflint",
-				"luacheck",
 				"hadolint",
 				"shellcheck",
 			},
