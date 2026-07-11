@@ -28,10 +28,10 @@ return {
 
 		require("mason-tool-installer").setup({
 			ensure_installed = {
+				"biome",
 				"prettier",
 				"stylua",
 				"black",
-				"eslint_d",
 				"flake8",
 				"autoflake",
 				"isort",
