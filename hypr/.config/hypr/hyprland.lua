@@ -249,8 +249,6 @@ local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + " .. "I", hl.dsp.exec_cmd("chromium"))
 
-hl.bind(mainMod .. " + " .. "C", hl.dsp.exec_cmd("code --ozone-platform=wayland --disable-gpu"))
-
 hl.bind(mainMod .. " + " .. "Return", hl.dsp.exec_cmd("ghostty"))
 
 -- bind = $mainMod SHIFT, Return, exec, $terminal --working-directory "$(pwd)"
@@ -448,6 +446,10 @@ hl.bind(mainMod .. " + " .. "mouse:273", hl.dsp.window.resize(), { mouse = true 
 -- hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "J", hl.dsp.window.resize_active({ delta = { 0, 100 } }))
 
 hl.bind(mainMod .. " + " .. "M", hl.dsp.exec_cmd("hyprlock"))
+
+hl.bind("Prior", hl.dsp.exec_cmd("playerctl play-pause"))
+hl.bind("Next", hl.dsp.exec_cmd("playerctl next"))
+hl.bind("End", hl.dsp.exec_cmd("playerctl previous"))
 
 --#############################
 
