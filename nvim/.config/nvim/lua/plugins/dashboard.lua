@@ -67,16 +67,6 @@ return {
 				action = ":LazyGit",
 			},
 			{
-				icon = "󰁯  ",
-				icon_hl = "DashboardIcon",
-				desc = "Restore Session",
-				desc_hl = "DashboardDesc",
-				key = "s",
-				key_hl = "DashboardKey",
-				key_format = " [%s]",
-				action = ":AutoSession search",
-			},
-			{
 				icon = "󰏗  ",
 				icon_hl = "DashboardIcon",
 				desc = "Lazy",
