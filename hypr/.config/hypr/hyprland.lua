@@ -165,12 +165,13 @@ hl.config({
 
 hl.config({
 	animations = {
-		enabled = false,
-		-- Default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
+		enabled = true,
 	},
 })
 
--- See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
+hl.animation({ leaf = "workspaces", enabled = true, speed = 3, bezier = "window-smooth", style = "slide" })
+hl.animation({ leaf = "windows", enabled = true, speed = 3, bezier = "window-smooth", style = "slide" })
+hl.animation({ leaf = "fade", enabled = 0 })
 
 hl.config({
 	dwindle = {
@@ -369,55 +370,60 @@ hl.bind(mainMod .. " + " .. "agrave", hl.dsp.focus({ workspace = 10 }))
 
 hl.bind(mainMod .. " + " .. "KP_Insert", hl.dsp.focus({ workspace = 10 }))
 
--- hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "left", { direction = "l" })
+-- Swap the active window with a neighboring window on the current workspace.
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "left", hl.dsp.window.swap({ direction = "l" }))
 
--- hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "right", { direction = "r" })
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "h", hl.dsp.window.swap({ direction = "l" }))
 
--- hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "up", { direction = "u" })
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "right", hl.dsp.window.swap({ direction = "r" }))
 
--- hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "down", { direction = "d" })
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "l", hl.dsp.window.swap({ direction = "r" }))
+
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "up", hl.dsp.window.swap({ direction = "u" }))
+
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "down", hl.dsp.window.swap({ direction = "d" }))
 
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "ampersand", hl.dsp.window.move({ workspace = 1 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "ampersand", hl.dsp.window.move({ workspace = 1, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_End", hl.dsp.window.move({ workspace = 1 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_End", hl.dsp.window.move({ workspace = 1, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "eacute", hl.dsp.window.move({ workspace = 2 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "eacute", hl.dsp.window.move({ workspace = 2, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Down", hl.dsp.window.move({ workspace = 2 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Down", hl.dsp.window.move({ workspace = 2, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "quotedbl", hl.dsp.window.move({ workspace = 3 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "quotedbl", hl.dsp.window.move({ workspace = 3, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Next", hl.dsp.window.move({ workspace = 3 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Next", hl.dsp.window.move({ workspace = 3, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "apostrophe", hl.dsp.window.move({ workspace = 4 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "apostrophe", hl.dsp.window.move({ workspace = 4, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Left", hl.dsp.window.move({ workspace = 4 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Left", hl.dsp.window.move({ workspace = 4, follow = false }))
 
 -- hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "parentleft", hl.dsp.window.move({ workspace = 5 }, { follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Begin", hl.dsp.window.move({ workspace = 5 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Begin", hl.dsp.window.move({ workspace = 5, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "minus", hl.dsp.window.move({ workspace = 6 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "minus", hl.dsp.window.move({ workspace = 6, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Right", hl.dsp.window.move({ workspace = 6 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Right", hl.dsp.window.move({ workspace = 6, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "egrave", hl.dsp.window.move({ workspace = 7 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "egrave", hl.dsp.window.move({ workspace = 7, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Home", hl.dsp.window.move({ workspace = 7 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Home", hl.dsp.window.move({ workspace = 7, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "underscore", hl.dsp.window.move({ workspace = 8 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "underscore", hl.dsp.window.move({ workspace = 8, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Up", hl.dsp.window.move({ workspace = 8 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Up", hl.dsp.window.move({ workspace = 8, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "ccedilla", hl.dsp.window.move({ workspace = 9 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "ccedilla", hl.dsp.window.move({ workspace = 9, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Prior", hl.dsp.window.move({ workspace = 9 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Prior", hl.dsp.window.move({ workspace = 9, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "agrave", hl.dsp.window.move({ workspace = 10 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "agrave", hl.dsp.window.move({ workspace = 10, follow = false }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Insert", hl.dsp.window.move({ workspace = 10 }, { follow = false }))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "KP_Insert", hl.dsp.window.move({ workspace = 10, follow = false }))
 
 -- Example special workspace (scratchpad)
 
@@ -446,10 +452,6 @@ hl.bind(mainMod .. " + " .. "mouse:273", hl.dsp.window.resize(), { mouse = true 
 -- hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "J", hl.dsp.window.resize_active({ delta = { 0, 100 } }))
 
 hl.bind(mainMod .. " + " .. "M", hl.dsp.exec_cmd("hyprlock"))
-
-hl.bind("Prior", hl.dsp.exec_cmd("playerctl play-pause"))
-hl.bind("Next", hl.dsp.exec_cmd("playerctl next"))
-hl.bind("End", hl.dsp.exec_cmd("playerctl previous"))
 
 --#############################
 
