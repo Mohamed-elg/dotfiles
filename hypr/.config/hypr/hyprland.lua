@@ -169,8 +169,8 @@ hl.config({
 	},
 })
 
-hl.animation({ leaf = "workspaces", enabled = true, speed = 3, bezier = "window-smooth", style = "slide" })
-hl.animation({ leaf = "windows", enabled = true, speed = 3, bezier = "window-smooth", style = "slide" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 3, bezier = "default", style = "slide" })
+hl.animation({ leaf = "windows", enabled = true, speed = 3, bezier = "default", style = "slide" })
 hl.animation({ leaf = "fade", enabled = 0 })
 
 hl.config({
